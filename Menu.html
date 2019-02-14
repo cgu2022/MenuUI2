@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Menu.UI</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -9,52 +9,41 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 550px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-    }
+    .row.content {height: 1000px}
+
+      .c-tabs-content__content, .c-tabs-content__label {
+          color: #1f1f20;
+          font-family: Roboto,Helvetica,Arial,sans-serif;
+          font-weight: 300
+      }
+
+      .c-tabs-content__content {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          margin: 0 0 10px
+      }
+
+      .sidenav {
+          background-color: #f1f1f1;
+          height: 100%;
+          width: 20%;
+      }
+      .sides {
+          color: azure;
+      }
         
-    /* On small screens, set height to 'auto' for the grid */
-    @media screen and (max-width: 767px) {
-      .row.content {height: auto;} 
-    }
   </style>
 </head>
 <body>
-
-<nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="#">Age</a></li>
-        <li><a href="#">Gender</a></li>
-        <li><a href="#">Geo</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 <div class="container-fluid">
   <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
+    <div class="col-sm-3 sidenav hidden-xs" style="background-color:DodgerBlue;">
       <h2>Logo</h2>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><a href="#section2">Age</a></li>
-        <li><a href="#section3">Gender</a></li>
-        <li><a href="#section3">Geo</a></li>
+        <li><a href="#section2" class="sides" >Age</a></li>
+        <li><a href="#section3" class="sides"  >Gender</a></li>
+        <li><a href="#section3" class="sides" >Geo</a></li>
       </ul><br>
     </div>
     <br>

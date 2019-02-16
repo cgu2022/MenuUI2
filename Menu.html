@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         body ::selection {
@@ -16,22 +17,48 @@
         }
 
         html {
-            height: 300vh;
+            /*height: 300vh;*/
             scroll-behavior: smooth;
         }
 
-        a{
-          color: black;  
-          transition: .3s;
+        body {
+             font-family: 'Open Sans', sans-serif;
+        }
+
+        a {
+            color: black;
+            transition: .3s;
+            text-decoration: none;
+        }
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
           text-decoration: none;
         }
-        a:hover{
-            transition: .3s;
-            color: aqua;
+
+
+        a:hover {
+           transition: .3s;
+           color: aqua;
+        }
+
+        i {
+            margin: 2vh;
+            font-size: 3em;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        blockquote {
+            margin: auto 10% auto 10%;
         }
 
         .row.content {
-            height: 130vh;
+            height: 122vh;
         }
 
         .well {
@@ -53,7 +80,8 @@
         .sidenav {
             background-color: #f1f1f1;
             height: 100%;
-            width: 17%;
+            width: 14%;
+            margin-right: 3vh;
         }
 
         .sides {
@@ -62,40 +90,42 @@
 
         .jumbotron {
             border-radius: 5px;
-            margin-left: 17%;
+            margin-left: 14%;
         }
-        i {
-            margin: 2vh;
-            font-size: 3em;
-        }
-        .row-2{
+
+        .row-2 {
             display: flex;
             flex-direction: row;
         }
-        .spacer{
-            height: 20vh;
+
+        .spacer {
+            margin-top:7vh;
         }
+        .spacer-bot{
+             margin-bottom: 4vh;
+        }
+
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row content">
             <div class="col-sm-3 sidenav hidden-xs" style="background-color:DodgerBlue;">
-                <div class="row-2"> <h1><b>Pingry</b></h1> <a href="http://www.sagedining.com/menus/pingry" target="_blank"><i class="fas fa-utensils"></i></a></div>
+                <div class="row-2"> <a href="https://www.pingry.org/" target="_blank"><h1><b>Pingry</b></h1></a> <a href="http://www.sagedining.com/menus/pingry" target="_blank"><i class="fas fa-utensils"></i></a></div>
                 <ul class="nav nav-pills nav-stacked">
-                    <li id="0"><a class="sides" href="#section1">Dashboard</a></li>
-                    <li id="1"><a href="#section2" class="sides">Age</a></li>
-                    <li id="2"><a href="#section3" class="sides">Gender</a></li>
-                    <li id="3"><a href="#section4" class="sides">Geo</a></li>
+                    <li id="0"><a class="sides" href="#section1">Lunch</a></li>
+                    <li id="1"><a href="#section2" class="sides">Lunch (static)</a></li>
+                    <li id="2"><a href="#section3" class="sides">Breakfast</a></li>
+                    <li id="3"><a href="#section4" class="sides">Cupcakes</a></li>
                 </ul><br>
             </div>
 
             <div class="jumbotron">
-                <h1>Bootstrap Tutorial</h1>
-                <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+                <h1>Pingry Menu</h1>
+                <p>At Pingry, the collaborative pursuit of excellence and honor are integral to every aspect of our programming, inside the classroom and out.</p>
             </div>
 
-            <div class="col-sm-9">
+            <div class="col-sm-9" id="section1">
                 <div class="well">
                     <h4>Dashboard</h4>
                     <p>Some text..</p>
@@ -162,84 +192,82 @@
                     </div>
                 </div>
             </div>
-
-            <div class="spacer">
-            </div>
-
-                <div class="col-sm-9" id="section2">
-                    <div class="well">
-                        <h4>Dashboard</h4>
-                        <p>Some text..</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="well">
-                                <h4>Users</h4>
-                                <p>1 Million</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="well">
-                                <h4>Pages</h4>
-                                <p>100 Million</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="well">
-                                <h4>Sessions</h4>
-                                <p>10 Million</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="well">
-                                <h4>Bounce</h4>
-                                <p>30%</p>
-                            </div>
+            <div class="col-sm-9 spacer" id="section2">
+                <div class="well">
+                    <h4>Dashboard</h4>
+                    <p>Some text..</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4>Users</h4>
+                            <p>1 Million</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="well">
-                                <p>Text</p>
-                                <p>Text</p>
-                                <p>Text</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="well">
-                                <p>Text</p>
-                                <p>Text</p>
-                                <p>Text</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="well">
-                                <p>Text</p>
-                                <p>Text</p>
-                                <p>Text</p>
-                            </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4>Pages</h4>
+                            <p>100 Million</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="well">
-                                <p>Text</p>
-                            </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4>Sessions</h4>
+                            <p>10 Million</p>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="well">
-                                <p>Text</p>
-                            </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4>Bounce</h4>
+                            <p>30%</p>
                         </div>
                     </div>
                 </div>
-
-
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Text</p>
+                            <p>Text</p>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Text</p>
+                            <p>Text</p>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Text</p>
+                            <p>Text</p>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Text</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
+    <blockquote class="spacer spacer-bot">
+        <p>Our success starts with our incredibly talented and committed team of employees. <br /> We cultivate that talent – providing extensive training in food safety, allergen awareness, preventing eating disorders, and more. </p>
+        <footer>Sage Dining</footer>
+    </blockquote>
     <script>
         $(".nav li a").on("click", function () {
-            $(".nav li").removeClass("active");   
+            $(".nav li").removeClass("active");
             $(this.id).addClass("active");
         });
     </script>

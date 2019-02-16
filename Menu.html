@@ -1,122 +1,247 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Menu.UI</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 1000px}
+    <title>Menu.UI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        body ::selection {
+            color: red;
+            background-color: none;
+        }
 
-      .c-tabs-content__content, .c-tabs-content__label {
-          color: #1f1f20;
-          font-family: Roboto,Helvetica,Arial,sans-serif;
-          font-weight: 300
-      }
+        html {
+            height: 300vh;
+            scroll-behavior: smooth;
+        }
 
-      .c-tabs-content__content {
-          font-size: 1rem;
-          line-height: 1.5rem;
-          margin: 0 0 10px
-      }
+        a{
+          color: black;  
+          transition: .3s;
+          text-decoration: none;
+        }
+        a:hover{
+            transition: .3s;
+            color: aqua;
+        }
 
-      .sidenav {
-          background-color: #f1f1f1;
-          height: 100%;
-          width: 20%;
-      }
-      .sides {
-          color: azure;
-      }
-        
-  </style>
+        .row.content {
+            height: 130vh;
+        }
+
+        .well {
+            background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+        }
+
+        .c-tabs-content__content, .c-tabs-content__label {
+            color: #1f1f20;
+            font-family: Roboto,Helvetica,Arial,sans-serif;
+            font-weight: 300
+        }
+
+        .c-tabs-content__content {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin: 0 0 10px
+        }
+
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+            width: 17%;
+        }
+
+        .sides {
+            color: azure;
+        }
+
+        .jumbotron {
+            border-radius: 5px;
+            margin-left: 17%;
+        }
+        i {
+            margin: 2vh;
+            font-size: 3em;
+        }
+        .row-2{
+            display: flex;
+            flex-direction: row;
+        }
+        .spacer{
+            height: 20vh;
+        }
+    </style>
 </head>
 <body>
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs" style="background-color:DodgerBlue;">
-      <h2>Logo</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><a href="#section2" class="sides" >Age</a></li>
-        <li><a href="#section3" class="sides"  >Gender</a></li>
-        <li><a href="#section3" class="sides" >Geo</a></li>
-      </ul><br>
-    </div>
-    <br>
-    
-    <div class="col-sm-9">
-      <div class="well">
-        <h4>Dashboard</h4>
-        <p>Some text..</p>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Users</h4>
-            <p>1 Million</p> 
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Pages</h4>
-            <p>100 Million</p> 
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Sessions</h4>
-            <p>10 Million</p> 
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Bounce</h4>
-            <p>30%</p> 
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav hidden-xs" style="background-color:DodgerBlue;">
+                <div class="row-2"> <h1><b>Pingry</b></h1> <a href="http://www.sagedining.com/menus/pingry" target="_blank"><i class="fas fa-utensils"></i></a></div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li id="0"><a class="sides" href="#section1">Dashboard</a></li>
+                    <li id="1"><a href="#section2" class="sides">Age</a></li>
+                    <li id="2"><a href="#section3" class="sides">Gender</a></li>
+                    <li id="3"><a href="#section4" class="sides">Geo</a></li>
+                </ul><br>
+            </div>
 
+            <div class="jumbotron">
+                <h1>Bootstrap Tutorial</h1>
+                <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+            </div>
+
+            <div class="col-sm-9">
+                <div class="well">
+                    <h4>Dashboard</h4>
+                    <p>Some text..</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4>Users</h4>
+                            <p>1 Million</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4>Pages</h4>
+                            <p>100 Million</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4>Sessions</h4>
+                            <p>10 Million</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4>Bounce</h4>
+                            <p>30%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Text</p>
+                            <p>Text</p>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Text</p>
+                            <p>Text</p>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Text</p>
+                            <p>Text</p>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer">
+            </div>
+
+                <div class="col-sm-9" id="section2">
+                    <div class="well">
+                        <h4>Dashboard</h4>
+                        <p>Some text..</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="well">
+                                <h4>Users</h4>
+                                <p>1 Million</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="well">
+                                <h4>Pages</h4>
+                                <p>100 Million</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="well">
+                                <h4>Sessions</h4>
+                                <p>10 Million</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="well">
+                                <h4>Bounce</h4>
+                                <p>30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <p>Text</p>
+                                <p>Text</p>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <p>Text</p>
+                                <p>Text</p>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <p>Text</p>
+                                <p>Text</p>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="well">
+                                <p>Text</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <p>Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </div>
+    <script>
+        $(".nav li a").on("click", function () {
+            $(".nav li").removeClass("active");   
+            $(this.id).addClass("active");
+        });
+    </script>
 </body>
 </html>

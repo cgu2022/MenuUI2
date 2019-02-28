@@ -61,7 +61,8 @@
 
         blockquote {
             background: linear-gradient(to right,#fce4ed,#ffe8cc);
-            margin: auto 10% auto 10%;
+            margin: auto 10% auto 17%;
+            position: relative;
         }
         blockquote p{
             color: transparent;
@@ -70,12 +71,22 @@
             background-image: linear-gradient(to left, #777dff 33%, #f154ff 66%, #f0357c),linear-gradient(to right, #777dff 33%, #497ce2 66%, #37bdde );
         }
         .row.content {
-            height: 95em;
+            height: 160em;
+        }
+
+        .center{
+            text-align: center;
         }
 
         .well {
             background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+            padding-top: 14px;
+            padding-bottom: 26px;
             /*background-image: linear-gradient(rgba(156,39,176,.2),#fff);*/
+        }
+        .well p{
+            margin-bottom: initial;
+            font-size: 1em;
         }
 
         .c-tabs-content__content, .c-tabs-content__label {
@@ -96,6 +107,17 @@
             height: 100%;
             width: 14%;
             margin-right: 3vh;
+            height: 100%;
+            position: fixed;
+            /*z-index: 1;
+            top: 0;
+            left: 0;*/
+            overflow-x: hidden;
+        }
+
+        .shiftL{
+            position: relative;
+            left: 17%;
         }
 
         .sides {
@@ -122,7 +144,7 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid" style="">
+    <div class="container-fluid">
         <div class="row content">
             <div class="col-sm-3 sidenav hidden-xs">
                 <div class="row-2"> <a href="https://www.pingry.org/" target="_blank"><h1><b>Pingry</b></h1></a> <a href="http://www.sagedining.com/menus/pingry" target="_blank"><i class="fas fa-utensils"></i></a></div>
@@ -130,10 +152,10 @@
                     <li id="0"><a class="sides" href="#section1">Lunch</a></li>
                     <li id="1"><a href="#section2" class="sides">Lunch (static)</a></li>
                     <li id="2"><a href="#section3" class="sides">Breakfast</a></li>
-                    <li id="3"><a href="#section4" class="sides">Cupcakes</a></li>
+                    <!--<li id="3"><a href="#section4" class="sides">Cupcakes</a></li>-->
                 </ul>
                 <br /> <br /> <br /> <br />
-                <time class="icon">
+                <time class="icon" style="margin: auto;">
                     <em>Saturday</em>
                     <span>16</span>
                     <strong>February</strong>
@@ -144,142 +166,228 @@
                 <h1>Pingry Menu</h1>
                 <p>At Pingry, the collaborative pursuit of excellence and honor are integral to every aspect of our programming, inside the classroom and out.</p>
             </div>
+            <div class="shiftL">
+                <div class="col-sm-9" id="section1">
+                    <div class="well center">
+                        <h2>Main Stuff:</h2>
+                        <p>Cheese Pizza</p>
+                        <p>Pepperoni Pizza</p>
+                        <p>Pizza Toppings Bar</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <h2>Main Ingredient:</h2>
+                                <p>Chicken Marsala</p>
+                                <p>Parmasan Risotto</p>
+                                <p>Simple Steamed Brocoli</p>
+                                <p>Grilled Asparagus with Sauteed Carrots</p>
+                                <p>Baked Rosemary Yukon & Sweet Potato Wedges</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <h2>Secondary Stuff:</h2>
+                                <p>Seasoned Jasmine Rice</p>
+                                <p>Rice Toppings Bar</p>
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <h4>Pasta</h4>
+                                <p>SAGE-Made Marinara Sauce</p>
+                                <p>SAGE-Made Bolognese Sauce</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <h4>Soups</h4>
+                                <p>Chicken Noodle Soup</p>
+                                <p>Mushroom Soup</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <h4>Panini</h4>
+                                <p>Balsamic Caprese Pesto Panini</p>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <h4>Deli</h4>
+                                <p>Bone-in Roasted Turkey Breast</p>
+                                <p>Bologna</p>
+                                <p>Checken & Black Bean Salad with Fresh Cilantro</p>
+                                <p>House made Lemon Hummus</p>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <h4>Salad</h4>
+                                <p>Build-Your-Own Greek Salad</p>
+                                <p>Farro, Cord, & Arugula Salad</p>
+                                <p>Garlic, Basil, & Chile Tofu Salad</p>
+                                <p>Cucumber & Tuna Salad</p>
+                                <p>Oranges</p>
+                                <p>Honeydew</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="well">
+                                <h4>Desert:</h4>
+                                <p>Cookies</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
 
-            <div class="col-sm-9" id="section1">
-                <div class="well">
-                    <h4>Dashboard</h4>
-                    <p>Some text..</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-9 spacer" id="section2">
                         <div class="well">
-                            <h4>Users</h4>
-                            <p>1 Million</p>
+                            <h4>Dashboard</h4>
+                            <p>Some text..</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <h4>Users</h4>
+                                    <p>1 Million</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <h4>Pages</h4>
+                                    <p>100 Million</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <h4>Sessions</h4>
+                                    <p>10 Million</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <h4>Bounce</h4>
+                                    <p>30%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="well">
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <p>Text</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-9 spacer" id="section3">
                         <div class="well">
-                            <h4>Pages</h4>
-                            <p>100 Million</p>
+                            <h4>Dashboard</h4>
+                            <p>Some text..</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <h4>Users</h4>
+                                    <p>1 Million</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <h4>Pages</h4>
+                                    <p>100 Million</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <h4>Sessions</h4>
+                                    <p>10 Million</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <h4>Bounce</h4>
+                                    <p>30%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="well">
+                                    <p>Text</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <p>Text</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <h4>Sessions</h4>
-                            <p>10 Million</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <h4>Bounce</h4>
-                            <p>30%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="well">
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="well">
-                            <p>Text</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-9 spacer" id="section2">
-                <div class="well">
-                    <h4>Dashboard</h4>
-                    <p>Some text..</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <h4>Users</h4>
-                            <p>1 Million</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <h4>Pages</h4>
-                            <p>100 Million</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <h4>Sessions</h4>
-                            <p>10 Million</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <h4>Bounce</h4>
-                            <p>30%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="well">
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="well">
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="well">
-                            <p>Text</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </div> <!--End of shiftL-->
     </div>
     <blockquote class="spacer spacer-bot">
         <p>Our success starts with our incredibly talented and committed team of employees. <br /> We cultivate that talent – providing extensive training in food safety, allergen awareness, preventing eating disorders, and more. </p>

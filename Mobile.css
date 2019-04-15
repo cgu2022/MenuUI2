@@ -1,0 +1,112 @@
+﻿html {
+    min-height: 100%; /* make sure it is at least as tall as the viewport */
+    position: relative;
+}
+
+body {
+    height: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: black;
+    margin-bottom: 2vh;
+}
+
+#jumbo {
+        border-radius: 5px;
+        margin-left: 0%;
+        padding-right: 15px;
+        width: 100vw;
+        text-align: center;
+    }
+
+#quote{
+    position: relative;
+    top: 0%;
+}
+
+#pingry{
+    display: initial;
+    margin-left: 10%;
+}
+
+#redyellow {
+    position: fixed;
+    /*background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.2), rgba(255,255,0, 0.2));*/
+    background-image: linear-gradient(159deg, #5277e7 57%, #3030a0);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.row.content {
+    height: 180em;
+}
+
+.sidenav{
+    display: none;
+}
+
+.navbar {
+    height: 10%;
+    background-image: linear-gradient(DodgerBlue,rgba(156,39,176,.2));
+}
+
+.jumbotron
+{
+    /*margin-top: 7vh;*/
+}
+
+
+#quote{
+    display: block;
+}
+
+#quote2 {
+    display: none;
+}
+
+blockquote {
+    background: linear-gradient(to right,#fce4ed,#ffe8cc),;
+    margin: 3em 10% 100px 10%;
+    position: relative;
+    border-radius: 10px;
+    border-left: initial;
+}
+
+    blockquote p {
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to left, #777dff 33%, #f154ff 66%, #f0357c),linear-gradient(to right, #777dff 33%, #497ce2 66%, #37bdde );
+    }
+
+
+.spacer {
+    margin-top: 30%;
+}
+.spacer2 {
+    margin-top: 30%;
+}
+.spacer-bot {
+    margin-bottom: 20vh;
+}
+
+    .shiftL {
+        position: relative;
+        left: 0%;
+    }
+
+    .sidenav {
+        background-image: linear-gradient(DodgerBlue,rgba(156,39,176,.2));
+        /*background-color:DodgerBlue;*/
+        height: 100%;
+        width: 0%;
+        display: none;
+    }
+
+#tops {
+    display: initial;
+}

@@ -1,0 +1,205 @@
+﻿/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+body ::selection {
+    color: red;
+    background-color: none;
+}
+
+html {
+    /*height: 300vh;*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    overflow-x: hidden;
+    /*font-family: 'Open Sans', sans-serif;*/
+    margin: 0;
+    /*background: linear-gradient(to left, #f58583, #ab67a2 47%, #5f54a2);*/
+}
+
+a {
+    color: black;
+    transition: .3s;
+    text-decoration: none;
+}
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+
+    a:hover {
+        transition: .3s;
+        color: aqua;
+    }
+
+i {
+    margin: 2vh;
+    font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+    color: black;
+    font-family: 'ABeeZee', sans-serif;
+    margin-bottom: 1.2vh;
+}
+
+blockquote {
+    /*background: linear-gradient(to right,#fce4ed,#ffe8cc);*/
+    background: linear-gradient(100deg, #04296f, #000b23);
+    margin: auto 10% auto calc(17% + 15px);
+    /*top: 70em;*/
+    position: relative;
+    border-radius: 5px;
+    border-left: initial;
+}
+
+    blockquote p {
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to left, #777dff 33%, #f154ff 66%, #f0357c),linear-gradient(to right, #777dff 33%, #497ce2 66%, #37bdde );
+    }
+
+#redyellow {
+    position: fixed;
+    /*background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.2), rgba(255,255,0, 0.2));*/
+    background-image: linear-gradient(to bottom, rgba(255,193,131,0.6), rgba(191,103,162, 0.6) 47%, rgba(181,170,247, 0.6));
+    background-image: linear-gradient(159deg, #c5daf9, #3a5abb 57%, #3030a0);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+h1.hed {
+    background: url(imgs/gold2.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+p.cursive {
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.row.content { /*VERY VERY IMPORTANT*/
+    height: 91em;
+}
+
+.center {
+    text-align: center;
+}
+
+.well {
+    /*background-image: -webkit-linear-gradient(top,#fAfAfA,#f1f1f1);*/
+    background-color: #ececec;
+    padding-top: 14px;
+    padding-bottom: 26px;
+    padding-left: 2em;
+    background-image: linear-gradient(-38deg, rgba(156,39,176,.2), #94bdff);
+    border: none;
+}
+
+    .well p {
+        margin-bottom: initial;
+        font-size: 1em;
+    }
+
+.c-tabs-content__content, .c-tabs-content__label {
+    color: #1f1f20;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 300
+}
+
+.c-tabs-content__content {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0 0 10px
+}
+
+.sidenav {
+    background-image: linear-gradient(DodgerBlue,rgba(156,39,176,.2));
+    /*background-color:DodgerBlue;*/
+    height: 100%;
+    width: 14%;
+    margin-right: 3vh;
+    height: 100%;
+    position: fixed;
+    /*z-index: 1;
+            top: 0;
+            left: 0;*/
+    overflow-x: hidden;
+}
+
+.shiftL {
+    position: relative;
+    left: 17%;
+}
+
+.sides {
+    color: azure;
+}
+
+.jumbotron {
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-left: 14%;
+    background-size: cover;
+    background-image: url('imgs/background.athletics.jpg')
+}
+
+    .jumbotron h1 {
+        /*color: green;*/
+    }
+
+    .jumbotron p {
+        color: #dab6b6;
+    }
+
+.headings {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0px auto 0px auto;
+    color: #052294;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.drop {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.dropdown-menu li {
+    margin: 10px 6px 10px 6px;
+}
+
+.spacer {
+    margin-top: 7vh;
+}
+
+.spacer-bot {
+    margin-bottom: 4vh;
+}
+
+#quote {
+    display: none;
+}
+
+#tops{
+    display: none;
+}

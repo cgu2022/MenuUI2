@@ -1,0 +1,12 @@
+{
+    "nacho-bar" : {
+        "upvotes" : "12",
+        "midvotes" : "12",
+        "downvotes" : "2"
+    },
+    "rodeo-burger" : {
+        "upvotes" : "1",
+        "midvotes" : "12",
+        "downvotes" : "22"
+    }
+}

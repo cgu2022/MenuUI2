@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
 #redyellow {
     position: fixed;
     /*background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.2), rgba(255,255,0, 0.2));*/
-    background-image: linear-gradient(159deg, #5277e7 57%, #3030a0);
+    /*background-image: linear-gradient(159deg, #5277e7 57%, #3030a0);*/
     height: 100%;
     width: 100%;
     left: 0;

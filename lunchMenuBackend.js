@@ -8,11 +8,11 @@
 // var url = 'https://pingrytoday.pingry.org:3001/v1/lunch?api_key=8CwpHFmEngVsKou3F1HN6h4pTI9OjCB6yZn6vzFo'
 // var https = require('https');
 var apiKey = '8CwpHFmEngVsKou3F1HN6h4pTI9OjCB6yZn6vzFo'
-var url = "https://pingrytoday.pingry.org:3001/v1/lunch?api_key=8CwpHFmEngVsKou3F1HN6h4pTI9OjCB6yZn6vzFo"
+var url = "https://pingrytoday.pingry.org/v1/lunch?api_key=8CwpHFmEngVsKou3F1HN6h4pTI9OjCB6yZn6vzFo"
 //Prints and returns today's lunch menu
 var todaysLunch = function () {
     var promise = new Promise((resolve, reject) => {
-        fetch("https://pingrytoday.pingry.org:3001/v1/lunch?api_key=8CwpHFmEngVsKou3F1HN6h4pTI9OjCB6yZn6vzFo&date=" + formatTodaysDate()).then(
+        fetch("https://pingrytoday.pingry.org/v1/lunch?api_key=8CwpHFmEngVsKou3F1HN6h4pTI9OjCB6yZn6vzFo&date=" + formatTodaysDate()).then(
             (response) => { return response.json() }
         ).then(result => {
             if (result) {
@@ -165,7 +165,7 @@ var getTodaysMenu = () => {
             para.appendChild(node);
             soup.appendChild(para);
         }
-       
+
         //panini
         var panini = document.getElementById("Panini");
         var pan = fullMenu[5]
@@ -222,6 +222,3 @@ var getTodaysMenu = () => {
 
 
 getTodaysMenu()
-
-
-
